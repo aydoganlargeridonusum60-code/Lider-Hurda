@@ -353,7 +353,7 @@ footer {
 
 .cat-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1.5rem;
     margin-top: 3rem;
 }
@@ -480,6 +480,7 @@ footer {
 /* Updated Responsive */
 @media (max-width: 968px) {
     .premium-title { font-size: 3rem; }
-    .about-grid, .services-grid, .footer-grid, .why-us-grid, .faq-grid { grid-template-columns: 1fr; }
+    .about-grid, .services-grid, .footer-grid, .why-us-grid, .faq-grid, .cat-grid { grid-template-columns: 1fr; }
+    .cat-item { padding: 1.2rem; font-size: 1rem; }
     .nav-links { display: none; }
 }
