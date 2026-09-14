@@ -68,11 +68,12 @@
     --ink-400: #9ca3af;
     --ink-300: #94a3b8;
     
-    /* Surfaces */
-    --white: #ffffff;
+    /* Surfaces (STRICT DARK THEME - NO WHITE BACKGROUNDS) */
+    --white: #111827;
     --paper: #0b0f19;
     --paper-2: #111827;
-    --glass-bg: rgba(17, 24, 39, 0.75);
+    --card-bg: #111827;
+    --glass-bg: rgba(17, 24, 39, 0.85);
     --glass-border: rgba(255, 255, 255, 0.08);
     --line: rgba(255, 255, 255, 0.1);
     --line-soft: rgba(255, 255, 255, 0.05);
@@ -103,6 +104,75 @@
     --shadow-md: 0 12px 36px rgba(0,0,0,.55);
     --shadow-lg: 0 25px 65px rgba(0,0,0,.7);
     --shadow-gold: 0 10px 30px rgba(16,185,129,.35);
+}
+
+/* --- ZERO WHITE BOXES: ALL CARDS ADAPT TO SEAMLESS DARK GLASS THEME --- */
+.service-card,
+.cluster-card,
+.expertise-snippet,
+.table-wrapper,
+.analysis-segment,
+.faq-item,
+.why-item,
+.calc-wrapper,
+.calc-result-card,
+.price-table-container,
+.summary-box,
+.insight-card {
+    background: #111827 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+.service-card h3,
+.cluster-card h3,
+.expertise-snippet h4,
+.snippet-content h4,
+.corporate-table th,
+.corporate-table td strong,
+.analysis-segment h3,
+.faq-question,
+.why-item h3,
+.calc-header h2,
+.quote-content h2,
+.insight-card h3,
+.section-header h2 {
+    color: #ffffff !important;
+}
+
+.service-card p,
+.cluster-card p,
+.expertise-snippet p,
+.snippet-content p,
+.corporate-table td,
+.analysis-segment p,
+.faq-answer p,
+.why-item p,
+.calc-header p,
+.quote-content p,
+.insight-card p {
+    color: #d1d5db !important;
+}
+
+.corporate-table th {
+    background: #0f172a !important;
+    color: #9ca3af !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.corporate-table td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+}
+
+.corporate-table tr:hover td {
+    background: rgba(16, 185, 129, 0.12) !important;
+    color: #ffffff !important;
+}
+
+.corporate-table tr.active-row td {
+    background: rgba(16, 185, 129, 0.18) !important;
+    border-left: 4px solid var(--emerald-500) !important;
+    color: #ffffff !important;
 }
 
 /* --- CANLI RENK KATEGORİ ROZETLERİ (COLORFUL MODERN BADGES) --- */
