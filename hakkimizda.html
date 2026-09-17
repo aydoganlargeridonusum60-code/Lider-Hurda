@@ -23,26 +23,23 @@
 <body class="analysis-page">
 
     <!-- Header / Navbar -->
-    <nav class="navbar">
+        <!-- Navigation -->
+    <nav class="navbar scrolled">
         <div class="container">
             <a href="index.html" class="logo">
-                <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25 5L5 15V35L25 45L45 35V15L25 5Z" stroke="#00FF41" stroke-width="2" fill="rgba(0,255,65,0.1)"/>
-                    <path d="M15 20L25 25L35 20" stroke="#00FF41" stroke-width="2"/>
-                    <path d="M25 25V38" stroke="#00FF41" stroke-width="2"/>
-                </svg>
-                <span>LİDER <small>HURDA</small></span>
+                <img src="assets/logo.png" alt="Lider Hurda Logo" class="brand-logo-img" width="44" height="44">
+                <span>LÄ°DER<strong class="brand-accent">HURDA</strong></span>
             </a>
-            <button class="mobile-menu-btn" aria-label="Menüyü Aç/Kapat">
+            <button class="mobile-menu-btn" aria-label="MenÃ¼yÃ¼ AÃ§">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
                 <li><a href="index.html">Anasayfa</a></li>
-                <li><a href="fiyat-listesi.html">Canlı Borsa</a></li>
+                <li><a href="fiyat-listesi.html">Fiyat Listesi</a></li>
                 <li><a href="analiz.html">Piyasa Analizi</a></li>
-                <li><a href="rehber.html">Bilgi Bankası</a></li>
-                <li><a href="hakkimizda.html" class="nav-btn-highlight active">Hakkımızda Detay</a></li>
-                <li><a href="index.html#contact">İletişim</a></li>
+                <li><a href="rehber.html">Bilgi BankasÄ±</a></li>
+                <li><a href="hakkimizda.html" class="nav-btn-highlight">HakkÄ±mÄ±zda</a></li>
+                <li><a href="#contact">Ä°letiÅŸim</a></li>
             </ul>
         </div>
     </nav>
@@ -304,66 +301,48 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+        <!-- Footer -->
+    <footer id="contact" style="background: var(--navy-950); color: #ffffff; padding: 60px 0 30px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 80px;">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25 5L5 15V35L25 45L45 35V15L25 5Z" stroke="#00FF41" stroke-width="2" fill="rgba(0,255,65,0.1)"/>
-                            <path d="M15 20L25 25L35 20" stroke="#00FF41" stroke-width="2"/>
-                            <path d="M25 25V38" stroke="#00FF41" stroke-width="2"/>
-                        </svg>
-                        <span>LİDER <small>HURDA</small></span>
-                    </div>
-                    <p>Türkiye'nin 81 ilinde öncü hurda borsa terminali, lisanslı geri dönüşüm ve kurumsal fabrika söküm merkezi.</p>
-                    <div class="footer-contact-info" style="margin-top: 15px; color: #888; font-size: 0.95rem;">
-                        <p><i class="fas fa-phone" style="color: var(--neon-green);"></i> <a href="tel:+905364863466" style="color: #fff; text-decoration: none;">0536 486 34 66</a></p>
-                        <p><i class="fas fa-map-marker-alt" style="color: var(--neon-green);"></i> İkitelli OSB / İstanbul (81 İl Hizmet Ağı)</p>
-                    </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex;">
+                        <img src="assets/logo.png" alt="Lider Hurda Logo" class="brand-logo-img" width="44" height="44">
+                        <span>LÄ°DER<strong class="brand-accent">HURDA</strong></span>
+                    </a>
+                    <p style="color: var(--steel-400); font-size: 0.95rem; line-height: 1.7;">
+                        TÃ¼rkiye Geneli 81 Ä°lde Hurda Demir, BakÄ±r, AlÃ¼minyum, SarÄ± ve Kablo AlÄ±mÄ±nda Lider KuruluÅŸ. 15 Dakikada Adresten Nakit AlÄ±m.
+                    </p>
                 </div>
-
-                <div class="footer-links-col">
-                    <h3>Hızlı Menü</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Anasayfa</a></li>
-                        <li><a href="fiyat-listesi.html">Canlı Borsa Fiyatları</a></li>
-                        <li><a href="analiz.html">Piyasa Analiz Masası</a></li>
-                        <li><a href="rehber.html">Bilgi Bankası</a></li>
-                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                    </ul>
+                <div>
+                    <h3 style="color: #ffffff; font-size: 1.2rem; font-weight: 700; margin-bottom: 18px;">HÄ±zlÄ± Ä°letiÅŸim</h3>
+                    <p style="color: var(--steel-300); margin-bottom: 10px;"><i class="fas fa-phone" style="color: var(--green-400); margin-right: 10px;"></i> <a href="tel:05364863466" style="color: #ffffff; font-weight: 700;">0536 486 34 66</a></p>
+                    <p style="color: var(--steel-300); margin-bottom: 10px;"><i class="fab fa-whatsapp" style="color: #25d366; margin-right: 10px;"></i> <a href="https://wa.me/905364863466" style="color: #ffffff;">0536 486 34 66</a></p>
+                    <p style="color: var(--steel-300);"><i class="fas fa-map-marker-alt" style="color: var(--green-400); margin-right: 10px;"></i> Ä°stanbul / TÃ¼m TÃ¼rkiye Geneli</p>
                 </div>
-
-                <div class="footer-links-col">
-                    <h3>Kurumsal Hizmetler</h3>
-                    <ul class="footer-links">
-                        <li><a href="fabrika-sokumu.html">Fabrika & Tesis Sökümü</a></li>
-                        <li><a href="hurda-karsiligi-yikim.html">Hurda Karşılığı Yıkım</a></li>
-                        <li><a href="kablo-hurdasi.html">Kablo & Granül Geri Kazanım</a></li>
-                        <li><a href="e-atik.html">E-Atık & Elektronik İmha</a></li>
-                        <li><a href="arsiv-imha.html">Kurumsal Arşiv İmhası</a></li>
+                <div>
+                    <h3 style="color: #ffffff; font-size: 1.2rem; font-weight: 700; margin-bottom: 18px;">PopÃ¼ler Kategoriler</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                        <li><a href="soyma-bakir.html" style="color: var(--steel-300);">Soyma BakÄ±r FiyatÄ±</a></li>
+                        <li><a href="dkp-demir.html" style="color: var(--steel-300);">DKP Demir HurdasÄ±</a></li>
+                        <li><a href="kablo-hurdasi.html" style="color: var(--steel-300);">Hurda Kablo AlÄ±mÄ±</a></li>
+                        <li><a href="hurda-aluminyum.html" style="color: var(--steel-300);">Hurda AlÃ¼minyum</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom" style="text-align: center; padding-top: 30px; margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.08); color: #777;">
-                <p>&copy; 2026 Lider Hurda Geri Dönüşüm Terminali. Tüm hakları saklıdır.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 25px; text-align: center; color: var(--steel-500); font-size: 0.9rem;">
+                <p>&copy; 2026 Lider Hurda Geri DÃ¶nÃ¼ÅŸÃ¼m. TÃ¼m HaklarÄ± SaklÄ±dÄ±r.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Sticky Mobile Action Bar -->
+    <div class="sticky-action-bar">
+        <a href="tel:05364863466" class="sticky-btn-call"><i class="fas fa-phone"></i> Hemen Ara</a>
+        <a href="https://wa.me/905364863466" class="sticky-btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Teklif</a>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 800, once: true });
-        
-        // Mobile Menu Toggle
-        const mobileBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        if (mobileBtn && navLinks) {
-            mobileBtn.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
+</html>
 </html>
