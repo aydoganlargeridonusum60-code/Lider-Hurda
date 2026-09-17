@@ -93,94 +93,7 @@
     }
     </script>
 
-    <style>
-        .price-filter-btn {
-            background: #1f2937;
-            color: #d1d5db;
-            border: 1px solid #374151;
-            padding: 10px 18px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            font-family: inherit;
-        }
-        .price-filter-btn:hover, .price-filter-btn.active {
-            background: #10b981;
-            color: #0b0f19;
-            border-color: #10b981;
-        }
-        .copper-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background: #111827;
-            border-radius: 14px;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        .copper-table th, .copper-table td {
-            padding: 16px 20px;
-            text-align: left;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-        }
-        .copper-table th {
-            background: #1f2937;
-            color: #10b981;
-            font-weight: 700;
-            font-size: 0.95rem;
-        }
-        .copper-table tr:hover td {
-            background: rgba(16, 185, 129, 0.05);
-        }
-        .calc-box-pro {
-            background: #111827;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 35px;
-            margin: 40px 0;
-        }
-        .calc-form-control {
-            width: 100%;
-            background: #1f2937;
-            border: 1px solid #374151;
-            padding: 14px 18px;
-            color: #fff;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-family: inherit;
-        }
-        .calc-res-display {
-            background: rgba(16, 185, 129, 0.1);
-            border: 1px dashed #10b981;
-            border-radius: 12px;
-            padding: 20px;
-            text-align: center;
-            margin: 20px 0;
-        }
-        .calc-res-val {
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: #10b981;
-        }
-        .floating-cta-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(11, 15, 25, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 12px 20px;
-            display: none;
-            justify-content: space-around;
-            gap: 10px;
-            z-index: 9999;
-            border-top: 1px solid rgba(16, 185, 129, 0.3);
-        }
-        @media(max-width: 768px) {
-            .floating-cta-bar { display: flex; }
-        }
-    </style>
+    
 </head>
 <body class="analysis-page">
 
@@ -212,7 +125,7 @@
         <ul class="breadcrumb" style="display:flex; gap:10px; list-style:none; color:#9ca3af; font-size:0.9rem;">
             <li><a href="index.html" style="color:#10b981; text-decoration:none;">Anasayfa</a></li>
             <li>/</li>
-            <li style="color:#fff; font-weight:600;">Hurda Fiyatları 2026</li>
+            <li class="active">Hurda Fiyatları 2026</li>
         </ul>
     </div>
 
@@ -247,7 +160,7 @@
         <section style="margin-bottom: 40px;">
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:15px; margin-bottom:20px;">
                 <div>
-                    <h2 style="color:#fff; font-size:1.8rem;">Canlı Borsa Hurda Fiyat Tablosu</h2>
+                    <h2  style="font-size:1.8rem;">Canlı Borsa Hurda Fiyat Tablosu</h2>
                     <p style="color:#9ca3af; font-size:0.92rem;">Aşağıdaki butonları kullanarak kategoriye göre filtreleyebilirsiniz.</p>
                 </div>
                 <div style="display:flex; flex-wrap:wrap; gap:8px;">
@@ -283,7 +196,7 @@
         <section class="calc-box-pro">
             <div style="text-align:center; margin-bottom: 25px;">
                 <span style="color:#10b981; font-weight:700; text-transform:uppercase; font-size:0.85rem;">HIZLI HESAPLAMA MOTORU</span>
-                <h2 style="color:#fff; font-size:1.8rem; margin-top:5px;">Hurda Değeri Hesaplayıcı</h2>
+                <h2  style="font-size:1.8rem; margin-top:5px;">Hurda Değeri Hesaplayıcı</h2>
                 <p style="color:#9ca3af; font-size:0.95rem;">Elinizdeki hurda metal cinsini ve tahmini kilonuzu girerek anında borsa tutarını görün.</p>
             </div>
 
@@ -325,19 +238,19 @@
         <!-- Silo Links -->
         <section style="margin:40px 0;">
             <div style="text-align:center; margin-bottom: 25px;">
-                <h2 style="color:#fff; font-size:1.6rem;">Kategori Bazlı Detaylı Hurda Sayfalarımız</h2>
+                <h2  style="font-size:1.6rem;">Kategori Bazlı Detaylı Hurda Sayfalarımız</h2>
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:18px;">
-                <a href="hurda-bakir.html" style="background:#111827; border:1px solid rgba(255,255,255,0.08); padding:20px; border-radius:14px; text-decoration:none; color:#fff; border-left:4px solid #10b981;">
+                <a href="hurda-bakir.html" style="background: #ffffff; border:1px solid rgba(255,255,255,0.08); padding:20px; border-radius:14px; text-decoration:none; color:#fff; border-left:4px solid #10b981;">
                     <strong>Hurda Bakır Alımı</strong><br><span style="color:#9ca3af; font-size:0.88rem;">Soyma, lama ve kırkambar bakır.</span>
                 </a>
-                <a href="hurda-kablo.html" style="background:#111827; border:1px solid rgba(255,255,255,0.08); padding:20px; border-radius:14px; text-decoration:none; color:#fff; border-left:4px solid #10b981;">
+                <a href="hurda-kablo.html" style="background: #ffffff; border:1px solid rgba(255,255,255,0.08); padding:20px; border-radius:14px; text-decoration:none; color:#fff; border-left:4px solid #10b981;">
                     <strong>Hurda Kablo Alımı</strong><br><span style="color:#9ca3af; font-size:0.88rem;">TTR, NYA ve sanayi kablosu verim testi.</span>
                 </a>
-                <a href="hurda-demir.html" style="background:#111827; border:1px solid rgba(255,255,255,0.08); padding:20px; border-radius:14px; text-decoration:none; color:#fff; border-left:4px solid #10b981;">
+                <a href="hurda-demir.html" style="background: #ffffff; border:1px solid rgba(255,255,255,0.08); padding:20px; border-radius:14px; text-decoration:none; color:#fff; border-left:4px solid #10b981;">
                     <strong>Hurda Demir Alımı</strong><br><span style="color:#9ca3af; font-size:0.88rem;">DKP, ekstra ve inşaat demiri.</span>
                 </a>
-                <a href="fabrika-sokumu.html" style="background:#111827; border:1px solid rgba(255,255,255,0.08); padding:20px; border-radius:14px; text-decoration:none; color:#fff; border-left:4px solid #10b981;">
+                <a href="fabrika-sokumu.html" style="background: #ffffff; border:1px solid rgba(255,255,255,0.08); padding:20px; border-radius:14px; text-decoration:none; color:#fff; border-left:4px solid #10b981;">
                     <strong>Fabrika Sökümü</strong><br><span style="color:#9ca3af; font-size:0.88rem;">Kurumsal tesis ve şantiye yıkımı.</span>
                 </a>
             </div>

@@ -69,63 +69,7 @@
     }
     </script>
 
-    <style>
-        .copper-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 30px 0;
-            background: #111827;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        .copper-table th, .copper-table td {
-            padding: 16px 20px;
-            text-align: left;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-        }
-        .copper-table th {
-            background: #1f2937;
-            color: #10b981;
-            font-weight: 700;
-        }
-        .copper-table td.price-num {
-            color: #10b981;
-            font-weight: 800;
-        }
-        .silo-grid-modern {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        .silo-card-link {
-            background: #111827;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 15px;
-            padding: 22px;
-            text-decoration: none;
-            color: #fff;
-            transition: all 0.3s ease;
-            display: block;
-            border-left: 4px solid #10b981;
-        }
-        .silo-card-link:hover {
-            transform: translateY(-4px);
-            border-color: #10b981;
-            background: #1f2937;
-        }
-        .silo-card-link strong {
-            display: block;
-            font-size: 1.15rem;
-            color: #fff;
-            margin-bottom: 6px;
-        }
-        .silo-card-link span {
-            font-size: 0.88rem;
-            color: #9ca3af;
-        }
-    </style>
+    
 </head>
 <body class="analysis-page">
 
@@ -157,7 +101,7 @@
             <li>/</li>
             <li><a href="elektrik-motoru.html" style="color:#10b981; text-decoration:none;">Motor Hurdası</a></li>
             <li>/</li>
-            <li style="color:#fff; font-weight:600;">Motor Bakır Verimi</li>
+            <li class="active">Motor Bakır Verimi</li>
         </ul>
     </div>
 
@@ -178,7 +122,7 @@
         
         <!-- Table -->
         <section style="margin: 40px 0;">
-            <h2 style="color:#fff; font-size:1.8rem; margin-bottom:20px;">Motor Tiplerine Göre Ortalama Bakır Oranı Tablosu</h2>
+            <h2  style="font-size:1.8rem; margin-bottom:20px;">Motor Tiplerine Göre Ortalama Bakır Oranı Tablosu</h2>
             <div style="overflow-x: auto;">
                 <table class="copper-table">
                     <thead>
@@ -226,7 +170,7 @@
 
         <!-- CTA Box -->
         <div style="background: linear-gradient(145deg, rgba(16, 185, 129, 0.12), rgba(17, 24, 39, 0.95)); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 20px; padding: 35px; text-align: center; margin: 40px 0;">
-            <h3 style="color:#fff; font-size:1.6rem; margin-bottom:10px;">Elinizde Hurda Motor Mu Var?</h3>
+            <h3  style="font-size:1.6rem; margin-bottom:10px;">Elinizde Hurda Motor Mu Var?</h3>
             <p style="color:#d1d5db; max-width:700px; margin:0 auto 20px auto;">
                 İster sökülmüş bakır sargı ister komple motor olarak getirin ya da adresinizden vinçli araçlarımızla alalım.
             </p>
@@ -238,7 +182,7 @@
         <!-- Silo Links -->
         <section style="margin: 60px 0;">
             <div style="text-align:center; margin-bottom: 30px;">
-                <h2 style="color:#fff; font-size:1.8rem;">Diğer Bakır Sayfalarımız</h2>
+                <h2  style="font-size:1.8rem;">Diğer Bakır Sayfalarımız</h2>
             </div>
             <div class="silo-grid-modern">
                 <a href="soyma-bakir.html" class="silo-card-link">
