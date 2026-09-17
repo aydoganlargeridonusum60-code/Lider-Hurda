@@ -17,53 +17,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        .price-list-container { padding: 60px 0; background: #050505; }
-        .category-group { margin-bottom: 60px; }
-        .category-title { 
-            color: var(--neon-green); 
-            font-size: 2rem; 
-            margin-bottom: 30px; 
-            border-left: 5px solid var(--neon-green); 
-            padding-left: 20px;
-            font-weight: 800;
+    
+    <!-- Schema: FAQPage & PriceSpecification for Googlebot Deep Indexing -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hurda fiyatlarÄ± neye gÃ¶re belirlenir ve ne sÄ±klÄ±kla gÃ¼ncellenir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hurda metal fiyatlarÄ±, Londra Metal BorsasÄ± (LME), serbest piyasa dÃ¶viz kuru (USD/EUR) ve yerel geri dÃ¶nÃ¼ÅŸÃ¼m tesislerinin anlÄ±k arz-talep dengesine gÃ¶re gÃ¼nlÃ¼k olarak gÃ¼ncellenmektedir. Lider Hurda olarak fiyatlarÄ±mÄ±zÄ± anlÄ±k borsa ekranlarÄ±yla entegre ÅŸekilde en yÃ¼ksek fiyattan sunuyoruz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Adresten hurda alÄ±mÄ± iÃ§in minimum miktar var mÄ±dÄ±r?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ä°stanbul geneli ve Marmara BÃ¶lgesi'nde her tÃ¼rlÃ¼ tonajlÄ± ve perakende hurda iÃ§in adrese servisimiz mevcuttur. TonajlÄ± hurdalarÄ±nÄ±z iÃ§in vinÃ§li, ahtapotlu ve kantarlÄ± araÃ§larÄ±mÄ±zla Ã¼cretsiz nakliye saÄŸlÄ±yoruz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hurda tartÄ±mÄ± nasÄ±l yapÄ±lÄ±r ve Ã¶deme ne zaman gerÃ§ekleÅŸir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hurda tartÄ±mÄ± mÃ¼ÅŸterimizin gÃ¶zÃ¼ Ã¶nÃ¼nde kalibrasyonlu dijital kantarÄ±mÄ±zla ÅŸeffaf olarak yapÄ±lÄ±r. TartÄ±m bittiÄŸi anda net tutar anÄ±nda peÅŸin nakit veya banka hesabÄ±nÄ±za havale/EFT olarak Ã¶denir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "En Ã§ok kazandÄ±ran hurda Ã§eÅŸitleri hangileridir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Birim fiyatÄ± en yÃ¼ksek hurdalar soyma bakÄ±r, lama bakÄ±r, sarÄ± pirinÃ§ (Ã§ubuk/musluk), kalay, nikel ve alÃ¼minyum profildir. Fabrika sÃ¶kÃ¼m ve ÅŸantiye hurdalarÄ±nda ise tonaj yÃ¼ksekliÄŸi nedeniyle demir ve kablo gruplarÄ± yÃ¼ksek kazanÃ§ saÄŸlar."
+          }
         }
-        .full-price-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0 10px;
-        }
-        .full-price-table tr {
-            background: rgba(255,255,255,0.02);
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        .full-price-table tr:hover {
-            background: rgba(0,255,65,0.05);
-            transform: scale(1.01);
-        }
-        .full-price-table td, .full-price-table th {
-            padding: 20px;
-            color: #fff;
-            border: none;
-        }
-        .full-price-table th {
-            background: transparent;
-            color: #555;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            text-align: left;
-        }
-        .item-name { font-weight: 600; font-size: 1.1rem; }
-        .item-price { color: var(--neon-green); font-weight: 800; font-size: 1.2rem; }
-        .item-link { color: #555; font-size: 0.9rem; transition: color 0.3s; }
-        .full-price-table tr:hover .item-link { color: var(--neon-green); }
-        
-        @media (max-width: 768px) {
-            .full-price-table th:nth-child(3), .full-price-table td:nth-child(3) { display: none; }
-        }
-    </style>
+      ]
+    }
+    </script>
 </head>
 <body class="fiyat-listesi-page">
 
@@ -424,14 +419,46 @@
         </div>
     </section>
 
-    <footer class="footer">
+        <!-- Footer -->
+    <footer id="contact" style="background: var(--navy-950); color: #ffffff; padding: 60px 0 30px; border-top: 1px solid rgba(255,255,255,0.1);">
         <div class="container">
-            <div style="text-align:center; padding: 40px 0; border-top: 1px solid #333;">
-                <p>&copy; 2026 Lider Hurda Geri Dönüşüm Terminali f</p>
-                <a href="index.html" style="color: var(--neon-green); text-decoration: none;">← Ana Sayfaya Dön</a>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex;">
+                        <img src="assets/logo.png" alt="Lider Hurda Logo" class="brand-logo-img" width="44" height="44">
+                        <span>LÄ°DER<strong class="brand-accent">HURDA</strong></span>
+                    </a>
+                    <p style="color: var(--steel-400); font-size: 0.95rem; line-height: 1.7;">
+                        TÃ¼rkiye Geneli 81 Ä°lde Hurda Demir, BakÄ±r, AlÃ¼minyum, SarÄ± ve Kablo AlÄ±mÄ±nda Lider KuruluÅŸ. 15 Dakikada Adresten Nakit AlÄ±m.
+                    </p>
+                </div>
+                <div>
+                    <h3 style="color: #ffffff; font-size: 1.2rem; font-weight: 700; margin-bottom: 18px;">HÄ±zlÄ± Ä°letiÅŸim</h3>
+                    <p style="color: var(--steel-300); margin-bottom: 10px;"><i class="fas fa-phone" style="color: var(--green-400); margin-right: 10px;"></i> <a href="tel:05364863466" style="color: #ffffff; font-weight: 700;">0536 486 34 66</a></p>
+                    <p style="color: var(--steel-300); margin-bottom: 10px;"><i class="fab fa-whatsapp" style="color: #25d366; margin-right: 10px;"></i> <a href="https://wa.me/905364863466" style="color: #ffffff;">0536 486 34 66</a></p>
+                    <p style="color: var(--steel-300);"><i class="fas fa-map-marker-alt" style="color: var(--green-400); margin-right: 10px;"></i> Ä°stanbul / TÃ¼m TÃ¼rkiye Geneli</p>
+                </div>
+                <div>
+                    <h3 style="color: #ffffff; font-size: 1.2rem; font-weight: 700; margin-bottom: 18px;">PopÃ¼ler Kategoriler</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                        <li><a href="soyma-bakir.html" style="color: var(--steel-300);">Soyma BakÄ±r FiyatÄ±</a></li>
+                        <li><a href="dkp-demir.html" style="color: var(--steel-300);">DKP Demir HurdasÄ±</a></li>
+                        <li><a href="kablo-hurdasi.html" style="color: var(--steel-300);">Hurda Kablo AlÄ±mÄ±</a></li>
+                        <li><a href="hurda-aluminyum.html" style="color: var(--steel-300);">Hurda AlÃ¼minyum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 25px; text-align: center; color: var(--steel-500); font-size: 0.9rem;">
+                <p>&copy; 2026 Lider Hurda Geri DÃ¶nÃ¼ÅŸÃ¼m. TÃ¼m HaklarÄ± SaklÄ±dÄ±r.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Sticky Mobile Action Bar -->
+    <div class="sticky-action-bar">
+        <a href="tel:05364863466" class="sticky-btn-call"><i class="fas fa-phone"></i> Hemen Ara</a>
+        <a href="https://wa.me/905364863466" class="sticky-btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Teklif</a>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
