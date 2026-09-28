@@ -3221,3 +3221,103 @@ table {
     padding: 20px 24px;
     margin: 20px 0;
 }
+
+/* ==========================================================================
+   GENERATIVE ENGINE OPTIMIZATION (GEO) & AI DIRECT ANSWER CARDS
+   ========================================================================== */
+.geo-direct-answer {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    border: 1.5px solid #86efac;
+    border-left: 5px solid #16a34a;
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin: 28px 0 36px 0;
+    box-shadow: 0 6px 20px rgba(22, 163, 74, 0.08);
+    position: relative;
+}
+
+.geo-direct-answer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.geo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #166534;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.geo-badge i {
+    color: #4ade80;
+    font-size: 0.85rem;
+}
+
+.geo-direct-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem !important;
+    font-weight: 800 !important;
+    color: #0f2942 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.geo-direct-answer p {
+    color: #1e293b !important;
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 12px !important;
+    font-weight: 500;
+}
+
+.geo-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed #bbf7d0;
+}
+
+.geo-fact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.92rem;
+    color: #0f3721;
+}
+
+.geo-fact-item i {
+    color: #16a34a;
+    margin-top: 3px;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.geo-fact-item strong {
+    color: #0b1e33;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .geo-direct-answer {
+        padding: 18px 16px;
+        margin: 20px 0;
+    }
+    .geo-facts-grid {
+        grid-template-columns: 1fr;
+    }
+}

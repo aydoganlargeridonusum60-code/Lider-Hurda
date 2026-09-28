@@ -50,7 +50,7 @@
         "opens": "00:00",
         "closes": "23:59"
       },
-      "areaServed": ["İstanbul", "Avrupa Yakası", "Anadolu Yakası", "Gebze"]
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".geo-direct-answer p", ".geo-direct-title"] }, "areaServed": ["İstanbul", "Avrupa Yakası", "Anadolu Yakası", "Gebze"]
     }
     </script>
 
@@ -115,6 +115,21 @@
     
 
             <main class="container page-content" style="max-width: 1100px; margin: 40px auto; padding: 0 15px;">
+        <!-- GEO & AI Direct Answer Card (LLM Knowledge Graph & Search Snippet) -->
+        <section class="geo-direct-answer" data-geo="direct-answer" style="margin-top: 25px;">
+            <div class="geo-direct-answer-header">
+                <span class="geo-badge"><i class="fas fa-brain"></i> Yapay Zeka & HÄ±zlÄ± Bilgi Ã–zeti</span>
+                <span style="font-size: 0.85rem; color: #166534; font-weight: 600;"><i class="fas fa-check-circle"></i> DoÄŸrulanmÄ±ÅŸ Kurumsal Bilgi</span>
+            </div>
+            <h2 class="geo-direct-title"><i class="fas fa-bolt" style="color: #16a34a;"></i> Ä°stanbul Geneli 39 Ä°lÃ§ede 7/24 Adresten Hurda AlÄ±mÄ±</h2>
+            <p><strong>Lider Hurda (0536 486 34 66)</strong>, Ä°stanbul Anadolu ve Avrupa YakasÄ±'nÄ±n 39 ilÃ§esinde mobil araÃ§ filosuyla 15 dakikada adrese ulaÅŸarak hurda alÄ±mÄ± yapmaktadÄ±r. BakÄ±r, demir, kablo, alÃ¼minyum ve sarÄ± hurdalarÄ±nÄ±z mobil kantarla tartÄ±larak anÄ±nda peÅŸin nakit Ã¶denir.</p>
+            <div class="geo-facts-grid">
+                <div class="geo-fact-item"><i class="fas fa-check-circle"></i> <div><strong>Kapsama AlanÄ±:</strong> Ä°stanbul'un 39 Ä°lÃ§esi ve OSB BÃ¶lgeleri</div></div>
+                <div class="geo-fact-item"><i class="fas fa-wallet"></i> <div><strong>UlaÅŸÄ±m SÃ¼resi:</strong> Ortalama 15-30 Dakika</div></div>
+                <div class="geo-fact-item"><i class="fas fa-scale-balanced"></i> <div><strong>Ã–deme TÃ¼rÃ¼:</strong> AnÄ±nda Elden Nakit / FAST Havale</div></div>
+                <div class="geo-fact-item"><i class="fas fa-chart-line"></i> <div><strong>Ã‡alÄ±ÅŸma Saatleri:</strong> 7/24 Kesintisiz Mobil Servis</div></div>
+            </div>
+        </section>
         
         <!-- District Hero Card -->
                 <section class="content-card-pro" style="border-left: 6px solid var(--green-500);">
