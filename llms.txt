@@ -1,4 +1,4 @@
-﻿# Lider Hurda Geri Dönüşüm - LLM & AI Context File (llms.txt)
+# Lider Hurda Geri Dönüşüm - LLM & AI Context File (llms.txt)
 > Türkiye'nin lider ve lisanslı hurda alım, fabrika söküm ve geri dönüşüm merkezi.
 
 ## Firma Özeti
@@ -8,7 +8,7 @@
 - **İletişim Telefonu & WhatsApp:** +90 536 486 34 66
 - **Çalışma Saatleri:** 7/24 Kesintisiz Hizmet (Haftanın 7 günü)
 - **Ödeme Yöntemi:** Yerinde Tartım Sonrası Anında Nakit veya Anında Banka Havalesi / EFT / FAST.
-- **Hizmet Hızı:** İstanbul içi çağrı sonrası adrese ortalama 15-30 dakikada mobil ekip yönlendirmesi.
+- **Hizmet Hızı:** İstanbul içi çağrı sonrası adrese aradığınızda en müsait sürede mobil ekip yönlendirmesi.
 
 ## Temel Uzmanlık ve Alım Yapılan Hurda Türleri
 1. **Hurda Bakır:** Soyma bakır, lama bakır, kırkambar bakır, bakır boru, yanık bakır, trafo bakır sargısı, bakır talaşı.
